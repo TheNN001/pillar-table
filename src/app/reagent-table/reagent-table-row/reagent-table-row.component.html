@@ -1,0 +1,8 @@
+<div class="rowTable" [ngClass]="affirmation ? '' : 'bottomBorder'">
+  <div class="rowTableTitle" [style.width]="(100 - scoreWidth) + '%'">
+    <span [style.font-weight]="affirmation ? 'bold' : 'unset'">{{rowName}}</span>
+  </div>
+  <div class="rowTableScore" [style.width]="scoreWidth + '%'" [style.background]="rowScoreColor" [style.color]="rowScoreTextColor">
+    <span>{{rowScoreText}}</span>
+  </div>
+</div>

@@ -1,0 +1,25 @@
+.rowTable {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rowTable .rowTableTitle {
+    width: 85%;
+}
+
+.rowTable .rowTableTitle,
+.rowTable .rowTableScore {
+    position: relative;
+    display: flex;
+    width: 60%;
+    padding: 15px 20px;
+    align-items: center;
+}
+
+.rowTable .rowTableScore {
+    width: 40%;
+    background: #008eff;
+    color: #FFFFFF;
+    border-bottom: 1px solid #FFFFFF;
+}

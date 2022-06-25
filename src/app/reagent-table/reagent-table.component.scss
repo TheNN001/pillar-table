@@ -1,0 +1,84 @@
+.pillarTableContainer {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+.overallScore {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.overallScore span.overallSpan {
+    position: relative;
+    display: block;
+    padding: 10px 20px;
+    width: 90%;
+    font-weight: 600;
+    color: #FFFFFF;
+    background: red;
+}
+
+.overallScore span.horSeparator {
+    position: relative;
+    display: block;
+    content: '';
+    height: 2px;
+    width: 100%;
+    background: #858585;
+    margin: 20px 0px;
+    border-radius: 10px;
+}
+
+.pillarTable {
+    position: relative;
+    display: block;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.pillarTable .pillarTableItem {
+    position: relative;
+    display: block;
+}
+
+.pillarTable .pillarTableItem:nth-child(2n) {
+    background: #F0F0F0;
+}
+
+.pillarTable .pillarTableClick {
+    position: relative;
+    display: block;
+    width: 100%;
+}
+
+span.topLine {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 50%;
+    height: 1px;
+    margin-top: -1px;
+    background: #858585;
+}
+
+mat-expansion-panel {
+    box-shadow: unset !important;
+    background: unset !important;
+}
+
+mat-expansion-panel mat-expansion-panel-header {
+    padding: 0 !important;
+    align-items: unset;
+    height: 100% !important;
+}
+
+.mat-expansion-panel {
+    overflow: unset;
+}
+
+.mat-expansion-panel-header {
+    font-size: 16px !important;
+}

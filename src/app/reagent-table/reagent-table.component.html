@@ -1,0 +1,25 @@
+<div class="pillarTableContainer">
+  <div class="overallScore" *ngIf="overallScore">
+    <span class="overallSpan" [style.background]="overallColor">{{overallText}}</span>
+    <span class="horSeparator"></span>
+  </div>
+  <div class="pillarTable">
+    <div class="pillarTableItem" *ngFor="let data of dataArray">
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <div class="pillarTableClick">
+              <app-reagent-table-row [scoreWidth]="scoreWidth" [rowName]="data.title" [rowScoreText]="data.scoreText" [rowScoreColor]="data.scoreColor" [rowScoreTextColor]="data.scoreTextColor"></app-reagent-table-row>
+            </div>
+          </mat-expansion-panel-header>
+          <div class="pillarTableCollap">
+            <div class="pillarTableCollapCont" *ngFor="let data_sub of data.affirmationSubContent; let i = index">
+              <span class="topLine" *ngIf="i !== 0" [style.width]="(100 - scoreWidth) + '%'"></span>
+              <app-reagent-table-row [affirmation]="false" [scoreWidth]="scoreWidth" [rowName]="data_sub.title_sub" [rowScoreText]="data_sub.scoreText_sub" [rowScoreColor]="data_sub.scoreColor_sub" [rowScoreTextColor]="data_sub.scoreTextColor_sub"></app-reagent-table-row>
+            </div>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
+  </div>
+</div>
